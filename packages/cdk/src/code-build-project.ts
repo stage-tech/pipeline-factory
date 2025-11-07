@@ -105,6 +105,7 @@ export class CodeBuildProject extends Construct {
         includeBuildId: true,
         name: `${props.githubRepositoryName}`,
         packageZip: true,
+        encryption: false,
       }),
     });
   }
